@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shivam Gupta Portfolio</title>
+  <meta name="description" content="Portfolio Template for Developer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    .edu {
+      /* background-color: rgb(79, 163, 212); */
+      /* margin-top: 10px; */
+      background-color: white;
+    }
+
+    #edu-1 {
+      /* font-family: cursive; */
+      /* font-size: 30px; */
+      padding-top: 30px;
+      display: block;
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 3.5rem;
+      position: relative;
+    }
+
+    #edu-1::after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 1.5rem);
+      height: 5px;
+      width: 3rem;
+      background: #0062b9;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+    }
+
+    .bachelor {
+      /* display: grid;
+      grid-template-columns: auto auto; */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10rem;
+      margin-right: 50px;
+      margin-left: 42px;
+      margin-top: 45px;
+
+    }
+
+    .lef {
+      /* padding: 10px; */
+    }
+
+    h5 {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      color: grey;
+      max-width: 60rem;
+    }
+
+    h3 {
+      /* margin-bottom: 10px; */
+      /* font-family: monospace; */
+      /* font-size: 13px; */
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      /* line-height: 1.7; */
+      /* margin-bottom: 1rem; */
+    }
+
+    .rig {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      margin-left: 60%;
+    }
+
+    #cgpa {
+      /* font-weight: bold; */
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+    }
+
+    #year {
+      /* font-size: 15px;
+      padding-bottom: 10px; */
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      color: grey;
+      max-width: 60rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/jpeg/Shivam.jpeg" alt="Shivam Gupta" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">Shivam Gupta</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#education" class="header__link">Qualification </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, Myself Shivam Gupta</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          My journey as a software developer is marked by an unwavering passion for innovation,
+          I craft elegant lines of code to transform complex problems into intuitive solutions, where each line of code
+          represents an opportunity to shape the future through technology and merging creativity with logic to build
+          digital experiences that empower and inspire.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://www.linkedin.com/in/shivam-gupta2001" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://github.com/codeworld12" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://twitter.com/ShivamG63476270?t=IEaWdtFRysEVWWx9zG39Qg&s=08" class="home-hero__social-icon-link">
+          <img src="./assets/png/twitter-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://www.instagram.com/shivamgupta22296/"
+          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Education Section  -->
+
+  <div class="edu" id="education">
+    <p id="edu-1">Qualification</p>
+    <div class="bachelor">
+      <div class="lef">
+        <h3>Rizvi College Of Engineering</h3>
+        <h5>University Of Mumbai</h5>
+        <h3>Guru Nanak College of Arts, Science & Commerce</h3>
+        <h5>HSC</h5>
+        <h3>Shri Gauridutt Mittal Vidyalaya</h3>
+        <h5>SSC</h5>
+      </div>
+      <div class="rig">
+        <p id="cgpa">CGPA:- 9.05</p>
+        <p id="year">August 2019-July 2023</p>
+        <p id="cgpa">Percentage:- 71.08%</p>
+        <p id="year">August 2017-July 2019</p>
+        <p id="cgpa">Percentage:- 77.80%</p>
+        <p id="year">August 2017</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Welcome to my digital domain where creativity and code converge, and where I sculpt lines of logic into
+          ingenious solutions.
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! It's
+              <strong>Shivam Gupta</strong>
+              and I'm a <strong> Full Stack Developer </strong> located in
+              Mumbai. Currently, I'm graduating in 2023 with my Bachelor of Engineering in Computer Engineering from the
+              University Of Mumbai.
+            </p>
+            <p class="about__content-details-para"> I had done
+              <strong> remote </strong>
+              internship at The Sparks Foundation and collaborated
+              with talented people to create
+              <strong>Web application of Basic Banking System</strong>
+              for consumer use.
+            </p>
+            <p class="about__content-details-para">
+              My expertise extends to the Python programming language, a realm where I seamlessly navigate intricate
+              algorithms and intricate data structures to bring concepts to life. Feel free to
+              <strong>contact</strong> me here.
+            </p>
+          </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          <a href="/https://drive.google.com/file/d/1XIySFK6j72m_t6P2HOdTVrsKRJ-inDF_/view?usp=drivesdk" class="btn btn--med btn--theme dynamicBgClr">Download Resume</a>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills__skill">PYTHON</div>
+            <div class="skills__skill">FLASK</div>
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">Django</div>
+            <div class="skills__skill">SQL</div>
+            <div class="skills__skill">AWS</div>
+            <div class="skills__skill">Azure</div>
+            <div class="skills__skill">GIT</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          These projects stand as testaments to my proficiency as a Python software developer, showcasing my mastery of
+          intricate algorithms, web design, optimization techniques, and collaborative development methodologies. Each
+          endeavor represents a step forward in my journey of innovation and continuous improvement.
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/Smart Accident.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Smart Accident Detection and Handling</h3>
+            <p class="projects__row-content-desc">
+              Created an advanced website using deep learning to
+              detect accidents in real-time from live surveillance cameras on roadways
+            </p>
+            <a href="./Smart_Accident_Detection_and_Handling.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/Picture1.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Hotel Recommender</h3>
+            <p class="projects__row-content-desc">
+              A website based on a recommendation system, implemented using a K-means clustering algorithm.
+            </p>
+            <a href="./Hotel_Recommender.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/Picture3_ATTENDANCE.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Online Attendance by Face Recognition using AI</h3>
+            <p class="projects__row-content-desc">
+              A web application built on React that enables users to recognize students’ faces for use in recording and
+              marking attendance.
+            </p>
+            <a href="./Online_Attendance_by_Face_Recognition_using_AI.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Feel free to reach out if you're interested in me to explore the realm of Python-driven software development
+          or to discuss potential collaboration opportunities. Let's dive into the intricacies of technology together.
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shivam-gupta2001">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/codeworld12">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer"
+              href="https://twitter.com/ShivamG63476270?t=IEaWdtFRysEVWWx9zG39Qg&s=08">
+              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/shivamgupta22296/">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Shivam Gupta</h4>
+          <p class="main-footer__short-desc">
+            <strong>"Strong bonds of connection outshine plenty's collection."</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        <p>
+          &copy; Copyright @2023. Made by
+          Shivam Gupta</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
