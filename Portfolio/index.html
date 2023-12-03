@@ -104,6 +104,21 @@
       color: grey;
       max-width: 60rem;
     }
+
+    #pic {
+      width: 70px;
+      /* Set the width of your profile image */
+      height: 70px;
+      /* Set the height of your profile image */
+      background-image: url('./assets/png/WhatsApp\ Image\ 2023-12-03\ at\ 8.43.24\ PM.jpeg');
+      /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+      background-size: contain;
+      /* This property ensures that the image covers the entire container */
+      background-repeat: no-repeat;
+      /* This property prevents the image from repeating */
+      border-radius: 50%;
+      /* This property creates a circular profile image by setting a border-radius of 50% */
+    }
   </style>
 </head>
 
@@ -111,8 +126,9 @@
   <header class="header">
     <div class="header__content">
       <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/Shivam.jpeg" alt="Shivam Gupta" class="header__logo-img" />
+        <div class="header__logo-img-cont" id="pic">
+          <!-- <img src="./assets/png/WhatsApp Image 2023-12-03 at 8.33.37 PM.jpeg" alt="Shivam Gupta" id="pic" -->
+          class="header__logo-img" />
         </div>
         <span class="header__logo-sub">Shivam Gupta</span>
       </div>
@@ -269,7 +285,13 @@
             </p>
           </div>
           <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
-          <a href="https://drive.google.com/file/d/1XIySFK6j72m_t6P2HOdTVrsKRJ-inDF_/view" class="btn btn--med btn--theme dynamicBgClr">Download Resume</a>
+          <!-- <a href="https://drive.google.com/file/d/1XIySFK6j72m_t6P2HOdTVrsKRJ-inDF_/view"
+            class="btn btn--med btn--theme dynamicBgClr">Download Resume</a> -->
+          <a href="https://drive.google.com/file/d/1XIySFK6j72m_t6P2HOdTVrsKRJ-inDF_/view"
+            class="btn btn--med btn--theme dynamicBgClr" download="Shivam_Gupta_Resume.pdf">
+            Download Resume
+          </a>
+
         </div>
         <div class="about__content-skills">
           <h3 class="about__content-title">My Skills</h3>
@@ -314,7 +336,8 @@
               Created an advanced website using deep learning to
               detect accidents in real-time from live surveillance cameras on roadways
             </p>
-            <a href="./Smart_Accident_Detection_and_Handling.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+            <a href="./Smart_Accident_Detection_and_Handling.html" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">Case Study</a>
           </div>
         </div>
         <div class="projects__row">
@@ -326,7 +349,8 @@
             <p class="projects__row-content-desc">
               A website based on a recommendation system, implemented using a K-means clustering algorithm.
             </p>
-            <a href="./Hotel_Recommender.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+            <a href="./Hotel_Recommender.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case
+              Study</a>
           </div>
         </div>
         <div class="projects__row">
@@ -340,7 +364,8 @@
               A web application built on React that enables users to recognize students’ faces for use in recording and
               marking attendance.
             </p>
-            <a href="./Online_Attendance_by_Face_Recognition_using_AI.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case Study</a>
+            <a href="./Online_Attendance_by_Face_Recognition_using_AI.html" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">Case Study</a>
           </div>
         </div>
       </div>
